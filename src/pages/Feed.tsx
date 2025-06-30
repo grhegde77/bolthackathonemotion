@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Plus, Heart, MessageCircle, X, Loader2, AlertCircle, Send, ThumbsUp, ThumbsDown, Users, User } from 'lucide-react'
+import { Plus, Heart, MessageCircle, X, Loader2, AlertCircle, Send, Users, User } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { usePosts, type PostReaction } from '../hooks/usePosts'
 import { useAuth } from '../contexts/AuthContext'
