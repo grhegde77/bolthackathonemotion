@@ -76,7 +76,7 @@ export function useCompanion() {
       const { data, error } = await supabase
         .from('companion_messages')
         .insert({
-          conversation_id: conversation.id,
+          conversation_id: conversation!.id,
           content,
           is_user: isUser,
           message_type: messageType

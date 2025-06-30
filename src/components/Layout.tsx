@@ -1,11 +1,10 @@
-import { Outlet, NavLink, useLocation } from 'react-router-dom'
+import { Outlet, NavLink } from 'react-router-dom'
 import { Heart, MessageCircle, LogOut, User } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Layout() {
-  const location = useLocation()
   const { profile, signOut } = useAuth()
   const [showProfile, setShowProfile] = useState(false)
 
